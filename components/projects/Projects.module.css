@@ -1,0 +1,11 @@
+.projectsContainer {
+  width: 100%;
+  min-height: 90vh;
+  padding-top: var(--navbar-height)
+}
+
+.header {
+  font-size: var(--topic-header-size);
+  text-align: center;
+  margin: 0;
+}
