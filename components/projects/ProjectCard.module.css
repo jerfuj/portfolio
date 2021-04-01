@@ -1,0 +1,50 @@
+.card {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 21rem;
+}
+
+.bottomHalf {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+.description {
+  margin: 0.7rem 0;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+}
+
+.link {
+  border: 1px solid black;
+  width: 6rem;
+  padding: 0.3rem 0;
+  border-radius: 6px;
+}
