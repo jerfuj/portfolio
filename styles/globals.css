@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700;900&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,12 +8,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 
-  background-color: teal;
+  font-family: 'Inter', sans-serif;
+
+  background-color: rgb(240, 240, 240);
   --topic-header-size: 5rem;
-  --navbar-height: 5rem;
+  --navbar-height: 4rem;
 }
 
 a {
