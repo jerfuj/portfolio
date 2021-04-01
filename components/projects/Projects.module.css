@@ -1,11 +1,25 @@
 .projectsContainer {
   width: 100%;
-  min-height: 90vh;
-  padding-top: var(--navbar-height)
+  min-height: 95vh;
+  padding-top: var(--navbar-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
   font-size: var(--topic-header-size);
   text-align: center;
   margin: 0;
+  margin-top: 2rem;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  padding: 0;
 }
