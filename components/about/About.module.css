@@ -1,11 +1,44 @@
 .aboutContainer {
   width: 100%;
-  min-height: 90vh;
-  padding-top: var(--navbar-height)
+  min-height: 100vh;
+  padding-top: var(--navbar-height);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.header {
+.aboutContainer h2 {
   font-size: var(--topic-header-size);
-  text-align: center;
   margin: 0;
+}
+
+.aboutMeContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutMeContainer p {
+  line-height: 2rem;
+}
+
+.techContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgContainer {
+  position: relative;
+  height: 4rem;
+  width: 6rem;
+  margin: 1rem;
 }
