@@ -8,7 +8,7 @@ function Projects({ projectsRef }) {
       <h1 className={styles.header}>Projects</h1>
       <ul className={styles.cardsContainer}>
         {projectData.map((project) => (
-          <ProjectCard project={project} />
+          <ProjectCard key={project.name} project={project} />
         ))}
       </ul>
     </section>
