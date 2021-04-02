@@ -11,7 +11,7 @@ function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
   }, [])
   
   const changeBackground = () => {
-    if (window.scrollY > 180) {
+    if (window.scrollY >= window.innerHeight) {
       setNavClass(`${styles.nav} ${styles.navScrollDown}`)
     } else {
       setNavClass(`${styles.nav} ${styles.navScrollUp}`);
