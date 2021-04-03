@@ -5,19 +5,21 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
-  height: var(--navbar-height)
+  height: var(--navbar-height);
+  padding-top: 3rem;
 }
 
 .navScrollDown {
   background-color: #000;
   color: #fff;
-  transition: all 500ms ease-in;
+  transition: all 500ms ease-out;
+  padding: 0;
 }
 
 .navScrollUp {
   background-color: transparent;
   color: #000;
-  transition: all 500ms ease-in;
+  transition: all 500ms ease-out;
 }
 
 .navContent {
@@ -29,9 +31,12 @@
   color: rgb(223, 223, 223);
 }
 
-.logoContainer h1 {
+.logo {
   margin: 1rem;
   font-weight: 400;
+  color: var(--accent-color);
+  font-size: 3rem;
+  letter-spacing: -21px;
 }
 
 .logoContainer:hover {
@@ -52,4 +57,8 @@
 
 .linksContainer li:hover {
   cursor: pointer;
+}
+
+.resume {
+  color: var(--accent-color);
 }
