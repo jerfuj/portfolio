@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
@@ -29,10 +30,7 @@ function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
           className={styles.logoContainer}
           onClick={() => scrollIntoView(heroRef)}
         >
-          <h1 className={styles.logo}>
-            <span className={styles.j}>J</span>
-            <span className={styles.f}>F</span>
-          </h1>
+        <Image src="/images/JF-logo.png" height={48} width={48} />
         </div>
         <ul className={styles.linksContainer}>
           <li onClick={() => scrollIntoView(projectsRef)}>Projects</li>
