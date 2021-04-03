@@ -4,8 +4,8 @@
   padding: 1rem;
   border-radius: 15px;
   text-align: center;
-  width: 23rem;
-}
+  width: 30rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 
 .bottomHalf {
   display: flex;
@@ -15,6 +15,7 @@
 .header {
   margin-top: 0.7rem;
   margin-bottom: 0;
+  font-size: 2.5rem;
 }
 
 .description {
@@ -28,7 +29,7 @@
 }
 
 .tag {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   padding: 0.2rem 0.4rem;
   margin: 0.2rem;
   border-radius: 3px;
@@ -42,8 +43,17 @@
 }
 
 .link {
-  border: 1px solid black;
-  width: 6rem;
-  padding: 0.3rem 0;
+  border: 1px solid var(--accent-color);;
+  background-color: var(--accent-color);
+  color: #fff;
+  width: 7rem;
+  padding: 0.4rem 0;
   border-radius: 6px;
+  margin-top: 0.5rem;
+  transition: all 200ms ease-in;
+}
+
+.link:hover {
+  background-color: var(--btn-hover);
+  border: 1px solid var(--btn-hover);
 }
