@@ -11,7 +11,7 @@ function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
   }, [])
   
   const changeBackground = () => {
-    if (window.scrollY >= window.innerHeight) {
+    if (window.scrollY >= 80) {
       setNavClass(`${styles.nav} ${styles.navScrollDown}`)
     } else {
       setNavClass(`${styles.nav} ${styles.navScrollUp}`);
@@ -29,13 +29,18 @@ function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
           className={styles.logoContainer}
           onClick={() => scrollIntoView(heroRef)}
         >
-          <h1>JF</h1>
+          <h1 className={styles.logo}>
+            <span className={styles.j}>J</span>
+            <span className={styles.f}>F</span>
+          </h1>
         </div>
         <ul className={styles.linksContainer}>
           <li onClick={() => scrollIntoView(projectsRef)}>Projects</li>
           <li onClick={() => scrollIntoView(aboutRef)}>About</li>
           <li onClick={() => scrollIntoView(contactRef)}>Contact</li>
-          <li>Resume</li>
+          <li className={styles.resume}>
+            <a href="https://docs.google.com/document/d/1TxgDlWCuosxEHGHiO6SpZsRMj8rSBkzHc5Kxqxqr98E/edit#heading=h.au8c9iwzs8ej" target="blank">Resume</a>
+          </li>
         </ul>
       </div>
     </header>
