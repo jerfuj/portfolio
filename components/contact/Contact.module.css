@@ -1,17 +1,28 @@
 .contactContainer {
   width: 100%;
-  min-height: 100vh;
-  /* padding-top: var(--navbar-height); */
+  padding: var(--navbar-height) 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg-color-1);
 }
 
 .header {
   font-size: var(--topic-header-size);
   text-align: center;
-  margin: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+.linksContainer {
+  display: flex;
+}
+
+.imgContainer {
+  position: relative;
+  height: 4rem;
+  width: 4rem;
+  margin: 0 1rem;
 }
 
 .form {
@@ -21,13 +32,20 @@
 .form input,
 .form textarea {
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   padding: 0.5rem;
   margin-top: 0.3rem;
   background: transparent;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  /* box-shadow: 0 0 10px #719ECE; */
 }
 
 .form input {
@@ -43,10 +61,19 @@
 }
 
 .btn {
-  background-color: transparent;
-  border: 1px solid black;
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
   width: 100%;
-  height: 2rem;
-  font-size: 1rem;
   border-radius: 5px;
+  padding: 0.6rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 200;
+  transition: all 200ms ease-in;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--btn-hover);
+  border: 1px solid var(--btn-hover);
 }
