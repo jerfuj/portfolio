@@ -15,7 +15,7 @@ function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
     if (window.scrollY >= 80) {
       setNavClass(`${styles.nav} ${styles.navScrollDown}`)
     } else {
-      setNavClass(`${styles.nav} ${styles.navScrollUp}`);
+      setNavClass(`${styles.nav}`);
     }
   }
 
