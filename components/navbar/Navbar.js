@@ -1,11 +1,20 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Navbar.module.css';
+import NavLinks from './NavLinks';
+import Hamburger from './Hamburger';
 
-function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
+
+export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
   const [scrolled, setScrolled] = useState(false);
-  const [navClass, setNavClass] = useState(`${styles.nav}`)
+  const [navClass, setNavClass] = useState(`${styles.nav}`);
+  const [mobile, setMobile] = useState(false);
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleBurger = () => {
+    setMenuOpen(!menuOpen);
+  }
 
   useEffect(() => {
     window.addEventListener('scroll', changeBackground);
@@ -23,26 +32,36 @@ function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
     ref.current.scrollIntoView();
   } 
 
+  function BurgerLinks() {
+    return (
+      <ul className={styles.burgerLinksContainer}>
+        <li onClick={() => scrollIntoView(projectsRef)}>Projects</li>
+        <li onClick={() => scrollIntoView(aboutRef)}>About</li>
+        <li onClick={() => scrollIntoView(contactRef)}>Contact</li>
+        <li className={styles.resume}>
+          <a href="https://docs.google.com/document/d/1TxgDlWCuosxEHGHiO6SpZsRMj8rSBkzHc5Kxqxqr98E/edit#heading=h.au8c9iwzs8ej" target="blank">Resume</a>
+        </li>
+      </ul>
+    )
+  }
+
   return (
-    <header className={navClass}>
-      <div className={styles.navContent}>
-        <div 
-          className={styles.logoContainer}
-          onClick={() => scrollIntoView(heroRef)}
-        >
-        <Image src="/images/JF-logo.png" height={48} width={48} />
+    <>
+      <header className={navClass}>
+        <div className={styles.navContent}>
+          <div 
+            className={styles.logoContainer}
+            onClick={() => scrollIntoView(heroRef)}
+          >
+            <Image src="/images/JF-logo.png" height={55} width={55} />
+          </div>
+          <Hamburger toggleBurger={toggleBurger} />
+          {/* <NavLinks /> */}
         </div>
-        <ul className={styles.linksContainer}>
-          <li onClick={() => scrollIntoView(projectsRef)}>Projects</li>
-          <li onClick={() => scrollIntoView(aboutRef)}>About</li>
-          <li onClick={() => scrollIntoView(contactRef)}>Contact</li>
-          <li className={styles.resume}>
-            <a href="https://docs.google.com/document/d/1TxgDlWCuosxEHGHiO6SpZsRMj8rSBkzHc5Kxqxqr98E/edit#heading=h.au8c9iwzs8ej" target="blank">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+        {menuOpen && <BurgerLinks />}
+      </header>
+    </>
   )
 };
 
-export default Navbar;
+
