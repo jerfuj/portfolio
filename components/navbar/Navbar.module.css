@@ -5,14 +5,14 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
-  height: var(--navbar-height);
+  flex-wrap: wrap;
+  /* height: var(--navbar-height); */
   padding-top: 3rem;
   transition: all 500ms ease-out;
 }
 
 .navScrollDown {
-  background-color: #000;
-  color: #fff;
+  background-color: #000310;
   padding: 0;
 }
 
@@ -55,4 +55,65 @@
 
 .resume {
   color: var(--accent-color); 
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .nav {
+    padding-top: .5rem;
+    background-color: #000310;
+  }
+
+  .linksContainer {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-out;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  .burgerLinksContainer {
+    z-index: 1000;
+    width: 100%;
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    background-color: #000310;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    animation: roll 500ms ease-out forwards;
+  }
+
+  @keyframes roll {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .burgerLinksContainer li {
+    border-bottom: 1px solid transparent;
+    padding: 0.5rem 0;
+    width: 15%;
+    margin: auto;
+    transition: all 500ms ease-out;
+  }
+
+  .burgerLinksContainer li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--accent-color);
+  }
 }
