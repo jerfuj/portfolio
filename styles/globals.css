@@ -9,14 +9,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 
   --bg-color-1: rgb(241, 241, 241);
-  --bg-color-2: rgb(247, 247, 247);
+  --bg-color-2: rgb(250, 250, 250);
   --topic-header-size: 4rem;
   --navbar-height: 3.5rem;
   --accent-color: #22aeff;
-  --h1-color: #000;
-  --h2-color: #000;
+  --h1-color: #000310;
+  --h2-color: #000310;
   --text-color: #000;
 
   --btn-hover: #1e8ccc;
