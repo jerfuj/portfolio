@@ -44,17 +44,8 @@
 }
 
 @media (max-width: 576px) {
-  .heroContainer {
-    width: 100%;
-  }
-
-  .textContainer {
-    width: 100%;
-    text-align: center;
-  }
-
   .header {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 500;
   }
 }
