@@ -4,7 +4,7 @@ import styles from './Contact.module.css';
 function Contact({ contactRef }) {
   return (
     <section ref={contactRef} className={styles.contactContainer}>
-      <h1 className={styles.header}>Get in touch!</h1>
+      <h2 className={styles.header}>Get in touch!</h2>
       <div className={styles.linksContainer}>
         <a href="https://www.linkedin.com/in/jeremyfujimoto/" target="blank" className={styles.imgContainer}>
           <Image
