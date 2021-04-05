@@ -1,14 +1,11 @@
 import { useState, useEffect, Fragment } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Navbar.module.css';
 import Hamburger from './Hamburger';
-
+import PropTypes from 'prop-types';
 
 export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
-  const [scrolled, setScrolled] = useState(false);
   const [navClass, setNavClass] = useState(`${styles.nav}`);
-  const [mobile, setMobile] = useState(false);
 
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleBurger = () => {
@@ -73,7 +70,7 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
         </li>
       </ul>
     )
-  };
+  }
 
   return (
     <>
@@ -92,6 +89,11 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
       </header>
     </>
   )
-};
+}
 
-
+Navbar.propTypes = {
+  projectsRef: PropTypes.instanceOf(Object).isRequired,
+  aboutRef: PropTypes.instanceOf(Object).isRequired,
+  contactRef: PropTypes.instanceOf(Object).isRequired,
+  heroRef: PropTypes.instanceOf(Object).isRequired
+}

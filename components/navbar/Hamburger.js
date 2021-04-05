@@ -1,4 +1,5 @@
 import styles from './Navbar.module.css';
+import PropTypes from 'prop-types';
 
 function Hamburger({ toggleBurger }) {
   return (
@@ -12,6 +13,10 @@ function Hamburger({ toggleBurger }) {
       </svg>
     </div>
   )
-};
+}
+
+Hamburger.propTypes = {
+  toggleBurger: PropTypes.instanceOf(Function).isRequired
+}
 
 export default Hamburger;

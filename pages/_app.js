@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import '../styles/globals.css'
 import { Fragment } from 'react';
 import Head from 'next/head';

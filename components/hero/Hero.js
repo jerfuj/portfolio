@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import styles from './Hero.module.css';
 import ParticlesBg from './ParticlesBg';
+import PropTypes from 'prop-types';
 
 function Hero({ heroRef }) {
   return (
@@ -12,6 +12,10 @@ function Hero({ heroRef }) {
       </div>
     </section>
   )
-};
+}
+
+Hero.propTypes = {
+  heroRef: PropTypes.instanceOf(Object).isRequired
+}
 
 export default Hero;

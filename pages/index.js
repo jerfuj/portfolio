@@ -1,11 +1,9 @@
-import Head from 'next/head'
-import { Fragment, useRef } from 'react'
+import { useRef } from 'react'
 import About from '../components/about/About'
 import Contact from '../components/contact/Contact'
 import Hero from '../components/hero/Hero'
 import Navbar from '../components/navbar/Navbar'
 import Projects from '../components/projects/Projects'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const heroRef = useRef();
@@ -14,7 +12,7 @@ export default function Home() {
   const contactRef = useRef();
 
   return (
-    <main className={styles.main}>
+    <main>
       <Navbar 
         projectsRef={projectsRef}
         aboutRef={aboutRef}

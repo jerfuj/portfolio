@@ -1,6 +1,7 @@
 import styles from './Projects.module.css';
 import projectData from './projectData';
 import ProjectCard from './ProjectCard';
+import PropTypes from 'prop-types';
 
 function Projects({ projectsRef }) {
   return (
@@ -13,6 +14,10 @@ function Projects({ projectsRef }) {
       </ul>
     </section>
   )
-};
+}
 
 export default Projects;
+
+Projects.propTypes = {
+  projectsRef: PropTypes.instanceOf(Object).isRequired
+}

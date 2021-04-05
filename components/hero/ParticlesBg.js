@@ -86,6 +86,6 @@ function ParticlesBg() {
         }}
       />
   )
-};
+}
 
 export default ParticlesBg;

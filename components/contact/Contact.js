@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './Contact.module.css';
+import PropTypes from 'prop-types';
 
 function Contact({ contactRef }) {
   return (
@@ -41,6 +42,10 @@ function Contact({ contactRef }) {
       </form>
     </section>
   )
-};
+}
+
+Contact.propTypes = {
+  contactRef: PropTypes.instanceOf(Object).isRequired
+}
 
 export default Contact;

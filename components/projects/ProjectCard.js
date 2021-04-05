@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './ProjectCard.module.css';
+import PropTypes from 'prop-types';
 
 function ProjectCard({ project }) {
   return (
@@ -28,6 +29,10 @@ function ProjectCard({ project }) {
       </div>
     </div>
   )
-};
+}
 
 export default ProjectCard;
+
+ProjectCard.propTypes = {
+  project: PropTypes.instanceOf(Object).isRequired
+}
