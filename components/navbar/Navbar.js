@@ -5,7 +5,7 @@ import Hamburger from './Hamburger';
 import PropTypes from 'prop-types';
 
 export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
-  const [navClass, setNavClass] = useState(`${styles.nav}`);
+  const [navClass, setNavClass] = useState(`${styles.navContent}`);
 
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleBurger = () => {
@@ -18,9 +18,9 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
   
   const changeBackground = () => {
     if (window.scrollY >= 80) {
-      setNavClass(`${styles.nav} ${styles.navScrollDown}`)
+      setNavClass(`${styles.navContent} ${styles.navScrollDown}`)
     } else {
-      setNavClass(`${styles.nav}`);
+      setNavClass(`${styles.navContent}`);
     }
   }
 
@@ -31,25 +31,31 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
   function BurgerLinks() {
     return (
       <ul className={styles.burgerLinksContainer}>
-        <li onClick={() => {
-          scrollIntoView(projectsRef);
-          toggleBurger();
-        }
-        }>
+        <li
+          onClick={() => {
+            scrollIntoView(projectsRef);
+            toggleBurger();
+          }}
+          className={styles.burgerLink}
+        >
           Projects
         </li>
-        <li onClick={() => {
-          scrollIntoView(aboutRef);
-          toggleBurger();
-        }
-        }>
+        <li
+          onClick={() => {
+            scrollIntoView(aboutRef);
+            toggleBurger();
+          }}
+          className={styles.burgerLink}
+        >
           About
         </li>
-        <li onClick={() => {
-          scrollIntoView(contactRef);
-          toggleBurger();
-        }
-        }>
+        <li
+          onClick={() => {
+            scrollIntoView(contactRef);
+            toggleBurger();
+          }}
+          className={styles.burgerLink}
+        >
           Contact
         </li>
         <li className={styles.resume}>
@@ -74,8 +80,8 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
 
   return (
     <>
-      <header className={navClass}>
-        <div className={styles.navContent}>
+      <header className={styles.nav}>
+        <div className={navClass}>
           <div 
             className={styles.logoContainer}
             onClick={() => scrollIntoView(heroRef)}
