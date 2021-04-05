@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .navContent {
@@ -21,8 +20,11 @@
 }
 
 .navScrollDown {
-  background-color: #000310;
   padding: 0;
+}
+
+.changeBg {
+  background-color: #000310;
 }
 
 .logo {
