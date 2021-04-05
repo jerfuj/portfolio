@@ -80,22 +80,12 @@
 }
 
 @media (max-width: 768px) {
-  .aboutContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
   .aboutMeContainer,
   .techContainer {
     width: 90%;
     margin-top: 3rem;
     margin-bottom: 1rem;
     text-align: center;
-  }
-
-  .techContainer {
-    margin-top: 1rem;
   }
 
   .aboutContainer h2 {
@@ -110,33 +100,9 @@
 }
 
 @media (max-width: 576px) {
-  .aboutContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .aboutMeContainer,
-  .techContainer {
-    width: 90%;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  .techContainer {
-    margin-top: 1rem;
-  }
-
   .aboutContainer h2 {
     font-size: var(--mobile-h2-size);
     font-weight: 700;
     text-align: center;
   }
-  
-  .aboutMeContainer p {
-    font-size: var(--mobile-p-size);
-  }
 }
-
-
-
