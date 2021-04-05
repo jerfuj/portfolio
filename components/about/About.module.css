@@ -9,7 +9,7 @@
 
 .aboutContainer h2 {
   font-size: var(--topic-header-size);
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .aboutMeContainer,
@@ -21,6 +21,7 @@
 .aboutMeContainer {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .aboutMeContainer p {
@@ -85,11 +86,6 @@
     justify-content: flex-start;
   }
 
-  .aboutContainer h2 {
-    font-size: var(--topic-header-size);
-    margin: 1rem 0;
-  }
-
   .aboutMeContainer,
   .techContainer {
     width: 90%;
@@ -120,11 +116,6 @@
     justify-content: flex-start;
   }
 
-  .aboutContainer h2 {
-    font-size: var(--topic-header-size);
-    margin: 1rem 0;
-  }
-
   .aboutMeContainer,
   .techContainer {
     width: 90%;
@@ -137,7 +128,7 @@
   }
 
   .aboutContainer h2 {
-    font-size: 3rem;
+    font-size: var(--mobile-h2-size);
     font-weight: 700;
     text-align: center;
   }
