@@ -6,7 +6,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  transition: all 500ms ease-out;
+  transition: padding 500ms ease-out;
+  padding: 2rem 0;
 }
 
 .navScrollDown {
@@ -38,6 +39,7 @@
 .linksContainer {
   display: flex;
   justify-content: space-evenly;
+  margin: 0;
 }
 
 .linksContainer li {
@@ -113,10 +115,6 @@
 }
 
 @media (max-width: 576px) {
-  .nav {
-    background-color: #000310;
-  }
-
   .linksContainer {
     display: none;
   }
