@@ -22,3 +22,45 @@
   margin: 0 auto;
   padding: 0;
 }
+
+@media (max-width: 768px) {
+  .heroContainer {
+    width: 100%;
+  }
+
+  .textContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+
+  .cardsContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroContainer {
+    width: 100%;
+  }
+
+  .textContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header {
+    font-size: var(--mobile-h2-size);
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+
+  .cardsContainer {
+    width: 100%;
+  }
+}

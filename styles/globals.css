@@ -19,8 +19,11 @@ body {
   --h1-color: #000310;
   --h2-color: #000310;
   --text-color: #000;
-
   --btn-hover: #1e8ccc;
+
+  /* MOBILE */
+  --mobile-h2-size: 3.5rem;
+  --mobile-p-size: 1rem;
 }
 
 a {
@@ -30,4 +33,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
 }

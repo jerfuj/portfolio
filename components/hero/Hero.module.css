@@ -27,6 +27,22 @@
   color: var(--accent-color);
 }
 
+@media (max-width: 768px) {
+  .heroContainer {
+    width: 100%;
+  }
+
+  .textContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 7rem;
+    font-weight: 500;
+  }
+}
+
 @media (max-width: 576px) {
   .heroContainer {
     width: 100%;
@@ -38,7 +54,7 @@
   }
 
   .header {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
   }
 }

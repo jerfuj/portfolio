@@ -58,3 +58,29 @@
   background-color: var(--btn-hover);
   border: 1px solid var(--btn-hover);
 }
+
+@media (max-width: 1200px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: .9rem;
+  }
+}

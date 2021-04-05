@@ -20,8 +20,8 @@
 
 .imgContainer {
   position: relative;
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   margin: 0 1rem;
 }
 
@@ -76,4 +76,16 @@
   cursor: pointer;
   background-color: var(--btn-hover);
   border: 1px solid var(--btn-hover);
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: var(--mobile-h2-size);
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+
+  .form {
+    width: 100%;
+  }
 }
