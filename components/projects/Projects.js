@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard';
 function Projects({ projectsRef }) {
   return (
     <section className={styles.projectsContainer} ref={projectsRef}>
-      <h1 className={styles.header}>Projects</h1>
+      <h2 className={styles.header}>Projects</h2>
       <ul className={styles.cardsContainer}>
         {projectData.map((project) => (
           <ProjectCard key={project.name} project={project} />
