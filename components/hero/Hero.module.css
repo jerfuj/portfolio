@@ -17,7 +17,7 @@
 }
 
 .textContainer {
-  width: 50%;
+  max-width: 38rem;
   min-height: 48rem;
   display: flex;
   flex-direction: column;
