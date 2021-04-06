@@ -45,7 +45,11 @@
 
 @media (max-width: 576px) {
   .header {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 500;
+  }
+
+  .p {
+    font-size: 1.9rem;
   }
 }
