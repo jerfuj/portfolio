@@ -1,17 +1,16 @@
 .heroContainer {
-  width: 50%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
 }
 
 .textContainer {
-  z-index: 998;
-  position: absolute;
   width: 50%;
+  min-height: 48rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header {
