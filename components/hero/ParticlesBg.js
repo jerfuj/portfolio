@@ -3,8 +3,6 @@ import Particles from "react-tsparticles";
 function ParticlesBg() {
   return (
       <Particles
-        width={'100vw'}
-        height={'100vh'}
         id="tsparticles"
         options={{
           background: {
@@ -46,13 +44,6 @@ function ParticlesBg() {
             color: {
               value: "#22aeff",
             },
-            // links: {
-            //   color: "",
-            //   distance: 150,
-            //   enable: true,
-            //   opacity: 0.5,
-            //   width: 1,
-            // },
             collisions: {
               enable: true,
             },
