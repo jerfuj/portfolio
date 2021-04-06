@@ -76,6 +76,10 @@
     width: 92%;
   }
 
+  .tag {
+    font-size: .75rem;
+  }
+
   .header {
     font-size: 2rem;
   }
