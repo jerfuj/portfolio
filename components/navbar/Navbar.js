@@ -75,7 +75,7 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
         <li onClick={() => scrollIntoView(aboutRef)}>About</li>
         <li onClick={() => scrollIntoView(contactRef)}>Contact</li>
         <li className={styles.resume}>
-          <a href="https://docs.google.com/document/d/1TxgDlWCuosxEHGHiO6SpZsRMj8rSBkzHc5Kxqxqr98E/edit#heading=h.au8c9iwzs8ej" target="blank">Resume</a>
+          <a href="https://drive.google.com/file/d/1Xyczi2SP-NgGTslP6VSv0UDdVtgDCKpG/view?usp=sharing" target="blank">Resume</a>
         </li>
       </ul>
     )
