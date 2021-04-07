@@ -109,13 +109,13 @@ function Contact({ contactRef }) {
 
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.formField}>
-          <label>Name <input type="text" onChange={handleNameChange} value={name} /></label>   
+          <label>Name <input type="text" onChange={handleNameChange} value={name} required/></label>   
         </div>
         <div className={styles.formField}>
-          <label>Email <input type="email" onChange={handleEmailChange} value={email} /></label>
+          <label>Email <input type="email" onChange={handleEmailChange} value={email} required/></label>
         </div>
         <div className={styles.formField}>
-          <label>Message <textarea rows="8" onChange={handleMessageChange} value={message} ></textarea></label>
+          <label>Message <textarea rows="8" onChange={handleMessageChange} value={message} required></textarea></label>
         </div>
         <div className={styles.formField}>
           <button className={styles.btn} type="submit">
