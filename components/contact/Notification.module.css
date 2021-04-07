@@ -9,10 +9,10 @@
   position: fixed;
   height: 3.5rem;
   bottom: 0;
-  width: 100%;
-  left: 0;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+  width: 30rem;
+  left: calc(50% - 15rem);
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
 
 .notification h2 {
@@ -32,11 +32,15 @@
   background-color: #D33F49;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .notification {
-    width: 30rem;
-    left: calc(50% - 15rem);
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
+    width: 100%;
+    left: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .notification h2 {
+    font-size: 1.5rem;
   }
 }
