@@ -55,6 +55,10 @@
 }
 
 @media (max-width: 576px) {
+  .textContainer {
+    min-height: 38rem;
+  }
+  
   .header {
     font-size: 4rem;
     font-weight: 500;

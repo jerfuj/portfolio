@@ -124,3 +124,9 @@
     margin: auto;
   }
 }
+
+@media (max-width: 576px) {
+  .navContent {
+    padding-top: 1rem;
+  }
+}
