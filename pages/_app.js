@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Jeremy Fujimoto</title>
         <link rel="shortcut icon" href="/images/JF-logo.png" />
+        <meta name="image" property="og:image" content="/images/homepage.png"></meta>
       </Head>
       <Component {...pageProps} />
     </>
