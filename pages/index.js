@@ -1,9 +1,9 @@
-import { useRef } from 'react'
-import About from '../components/about/About'
-import Contact from '../components/contact/Contact'
-import Hero from '../components/hero/Hero'
-import Navbar from '../components/navbar/Navbar'
-import Projects from '../components/projects/Projects'
+import { useRef } from 'react';
+import About from '../components/about/About';
+import Contact from '../components/contact/Contact';
+import Hero from '../components/hero/Hero';
+import Navbar from '../components/navbar/Navbar';
+import Projects from '../components/projects/Projects';
 
 export default function Home() {
   const heroRef = useRef();
@@ -13,16 +13,16 @@ export default function Home() {
 
   return (
     <main>
-      <Navbar 
+      <Navbar
         projectsRef={projectsRef}
         aboutRef={aboutRef}
         contactRef={contactRef}
         heroRef={heroRef}
       />
-      <Hero heroRef={heroRef} />
+      <Hero heroRef={heroRef} projectsRef={projectsRef} />
       <Projects projectsRef={projectsRef} />
-      <About aboutRef={aboutRef}/>
-      <Contact contactRef={contactRef}/>
+      <About aboutRef={aboutRef} />
+      <Contact contactRef={contactRef} />
     </main>
-  )
+  );
 }
