@@ -14,7 +14,7 @@ function Hero({ heroRef, projectsRef }) {
       <ParticlesBg />
       <div className={styles.textContainer}>
         <h1 className={styles.header}>Jeremy Fujimoto</h1>
-        <p className={styles.p}>Full Stack Web Developer</p>
+        <p className={styles.p}>Full Stack Software Engineer</p>
       </div>
       <div className={styles.iconContainer} onClick={handleIconClick}>
         <IconContext.Provider value={{ color: 'white' }}>
