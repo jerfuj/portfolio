@@ -2,7 +2,7 @@
   jeremyfujimoto.dev
 </h1>
 
-![screenshot](/public/images/homepage.png)
+![screenshot](https://raw.githubusercontent.com/jerfuj/portfolio/main/public/images/hero-screenshot.png)
 
 ## Technologies Used
 * Next.js
