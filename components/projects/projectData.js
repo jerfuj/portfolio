@@ -1,5 +1,13 @@
 const projectData = [
   {
+    name: 'Spotioke',
+    description: 'Karaoke app integrated with Spotify\'s API',
+    technologies: ['React', 'React Router', 'Express', 'MongoDB', 'Emotion Styled Components'],
+    gitHubURL: 'https://github.com/over-thinkers/spotify-karaoke',
+    liveURL: 'https://spotioke.herokuapp.com/',
+    image: '/images/spotioke-lyrics-page.png'
+  },
+  {
     name: 'HALayovers',
     description: 'Multi-page flight attendant forum for layover tips and experiences',
     technologies: ['React', 'React Router', 'Express', 'MySQL', 'CSS Modules'],
