@@ -63,7 +63,7 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
         </li>
         <li className={styles.resume}>
           <a
-            href='https://drive.google.com/file/d/1EVFSdtwhjaIy91yNdUPsV0kbYqTSQtXk/view'
+            href='https://drive.google.com/file/d/1p3XIQEq8tzs6hV_nxlZtQQkMY9MSzHH5/view'
             target='blank'
           >
             Resume
@@ -81,7 +81,7 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
         <li onClick={() => scrollIntoView(contactRef)}>Contact</li>
         <li className={styles.resume}>
           <a
-            href='https://drive.google.com/file/d/1EVFSdtwhjaIy91yNdUPsV0kbYqTSQtXk/view'
+            href='https://drive.google.com/file/d/1p3XIQEq8tzs6hV_nxlZtQQkMY9MSzHH5/view'
             target='blank'
           >
             Resume
