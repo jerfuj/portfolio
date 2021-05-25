@@ -6,30 +6,30 @@ import PropTypes from 'prop-types';
 
 export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
   const [navClass, setNavClass] = useState(`${styles.navContent}`);
-  const [mainNavClass, setMainNavClass] = useState(`${styles.nav}`)
+  const [mainNavClass, setMainNavClass] = useState(`${styles.nav}`);
 
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleBurger = () => {
     setMenuOpen(!menuOpen);
-  }
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', scrollDown);
-  }, [])
-  
+  }, []);
+
   const scrollDown = () => {
     if (window.scrollY >= 80) {
-      setNavClass(`${styles.navContent} ${styles.navScrollDown}`)
-      setMainNavClass(`${styles.nav} ${styles.changeBg}`)
+      setNavClass(`${styles.navContent} ${styles.navScrollDown}`);
+      setMainNavClass(`${styles.nav} ${styles.changeBg}`);
     } else {
       setNavClass(`${styles.navContent}`);
       setMainNavClass(`${styles.nav}`);
     }
-  }
+  };
 
   const scrollIntoView = (ref) => {
     ref.current.scrollIntoView();
-  } 
+  };
 
   function BurgerLinks() {
     return (
@@ -62,10 +62,15 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
           Contact
         </li>
         <li className={styles.resume}>
-          <a href="https://drive.google.com/file/d/1j2S9G8Qye3NL1mlJYojKgmNeowKogt2h/view?usp=sharing" target="blank">Resume</a>
+          <a
+            href='https://drive.google.com/file/d/1EVFSdtwhjaIy91yNdUPsV0kbYqTSQtXk/view'
+            target='blank'
+          >
+            Resume
+          </a>
         </li>
       </ul>
-    )
+    );
   }
 
   function NavLinks() {
@@ -75,32 +80,37 @@ export default function Navbar({ projectsRef, aboutRef, contactRef, heroRef }) {
         <li onClick={() => scrollIntoView(aboutRef)}>About</li>
         <li onClick={() => scrollIntoView(contactRef)}>Contact</li>
         <li className={styles.resume}>
-          <a href="https://drive.google.com/file/d/1j2S9G8Qye3NL1mlJYojKgmNeowKogt2h/view?usp=sharing" target="blank">Resume</a>
+          <a
+            href='https://drive.google.com/file/d/1EVFSdtwhjaIy91yNdUPsV0kbYqTSQtXk/view'
+            target='blank'
+          >
+            Resume
+          </a>
         </li>
       </ul>
-    )
+    );
   }
 
   return (
     <header className={mainNavClass}>
       <div className={navClass}>
-        <div 
+        <div
           className={styles.logoContainer}
           onClick={() => scrollIntoView(heroRef)}
         >
-          <Image src="/images/JF-logo.png" height={55} width={55} />
+          <Image src='/images/JF-logo.png' height={55} width={55} />
         </div>
         <Hamburger toggleBurger={toggleBurger} />
         <NavLinks />
       </div>
       {menuOpen && <BurgerLinks />}
     </header>
-)
+  );
 }
 
 Navbar.propTypes = {
   projectsRef: PropTypes.instanceOf(Object).isRequired,
   aboutRef: PropTypes.instanceOf(Object).isRequired,
   contactRef: PropTypes.instanceOf(Object).isRequired,
-  heroRef: PropTypes.instanceOf(Object).isRequired
-}
+  heroRef: PropTypes.instanceOf(Object).isRequired,
+};
